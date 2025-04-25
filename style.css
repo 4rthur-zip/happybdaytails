@@ -1,0 +1,243 @@
+@font-face {
+  font-family: 'Pixelite';
+  src: url("vertopal.com_PIXELITE.ttf");
+}
+
+@font-face {
+  font-family: 'ShPinscher';
+  src: url("SHPinscher-Regular.otf");
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: rgb(228, 174, 26);
+    font-family: "Pixelite", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content-box {
+    width: 90vw;
+    height: 90vh;
+    background: rgb(22, 22, 22);
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  /* Left Panel */
+  .left-panel {
+    background-image: url("https://images-ext-1.discordapp.net/external/vRiA24ZGPBaY1JrikR1vNGAM__MsDIM14eJyFJkG4cA/https/i.pinimg.com/originals/43/b6/b1/43b6b1c35afba9f2a52da49dacfefefc.gif");
+  }
+  
+  .art-box {
+    height: auto;
+    width: 90%;
+    border: 1px solid #444;
+    border-radius: 15px;
+    background-color: #fff;
+  }
+  
+  .art-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  
+  .audio-box {
+    background-color: #0e2370;
+    border: none;
+    border-radius: 12px;
+    gap: 8px;   
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;     
+    justify-content: center;
+    padding: 10px 30px 5px 30px; 
+  }
+  
+  /* Right Panel */
+  .right-panel {
+    background-color: #000000;
+  }
+
+  /* Style buat text kupindah sini */
+  ol {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* dunno why tapi ini yg buat ngatur the general text, bawaan gdocs jgn di hapus */
+  .c0 {
+    color: #2db44a;
+    font-weight: 400;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 15pt;
+    font-family: "ShPinscher";
+    font-style: normal;
+  }
+  .c1 {
+    padding-top: 0pt;
+    padding-bottom: 0pt;
+    line-height: 1.15;
+    orphans: 2;
+    widows: 2;
+    text-align: left;
+  }
+  .c2 {
+    height: 11pt;
+  }
+  .c4 {
+    font-style: italic;
+  }
+  p {
+    margin: 0;
+    font-size: 11pt;
+    font-family: "Pixelite";
+  }
+
+  /* fic text spacing */
+  .text-scroll{
+    max-height: 100%;
+    border-radius: 10px;
+    padding: 1rem; 
+  }
+
+  
+  .audio-box {
+  background-color: #17740044;
+  outline: 2px solid #2db44a;
+  outline-offset: 3;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.audioControls {
+  color: #41cc5f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vh;
+}
+
+.audioControls .audioPlay{
+  color: #020e05;
+  background-color: #2db44a;
+  outline: 2px solid #eaffef;
+}
+
+.runningTails {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 1vh;
+  background: hsl(0, 0%, 0%);
+  outline: none;
+  border-radius: 0px;
+}
+
+.runningTails::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 7vh;
+  width: 7vh;
+  background: url('./assets/rundesiboyrun.gif') no-repeat center;
+  background-size: cover;
+  cursor: pointer;
+  border: none;
+  margin-top: -4vh;
+}
+
+.runningTails::-webkit-slider-runnable-track {
+  height: 1vh;
+  background: #000000;
+  border-radius: 0px;
+}
+
+.credits-box {
+  background-image: url("https://images-ext-1.discordapp.net/external/vRiA24ZGPBaY1JrikR1vNGAM__MsDIM14eJyFJkG4cA/https/i.pinimg.com/originals/43/b6/b1/43b6b1c35afba9f2a52da49dacfefefc.gif");
+  color: #2db44a;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 150vh;
+  width: 100%;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 20px #2db44a88;
+  outline: solid 2vh rgb(95, 95, 95);
+  border-radius: 3vh;
+}
+
+.credits-title {
+  font-family: "ShPinscher", sans-serif;
+  font-size: 36px;
+  margin-bottom: 2rem;
+  color: #ade2b8;
+  text-shadow: 0 0 8px #ade2b8;
+}
+
+.credits-line {
+  font-size: 24px;
+  margin-bottom: 1.5rem;
+  line-height: 2.2;
+}
+
+/* CREDITS */
+
+.glow-name {
+  color: #fff;
+  text-shadow: 0 0 5px #2db44a, 0 0 10px #2db44a, 0 0 20px #2db44a;
+  animation: pulseGlow 2s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0% {
+    transform: scale(1);
+    text-shadow: 0 0 5px #2db44a, 0 0 10px #2db44a, 0 0 20px #2db44a;
+  }
+  50% {
+    transform: scale(1.05);
+    text-shadow: 0 0 10px #6fff96, 0 0 20px #6fff96, 0 0 30px #6fff96;
+  }
+  100% {
+    transform: scale(1);
+    text-shadow: 0 0 5px #2db44a, 0 0 10px #2db44a, 0 0 20px #2db44a;
+  }
+}
+
+.electricController1 img,
+.electricController2 img {
+  width: 100%;
+  transform: scale(1.0);
+}
+
+#creditsButton {
+  font-size: 0.75rem;  /* Smaller text */
+  color: #124820;
+  background-color: #2db44a;
+  outline: 2px solid #abe4b8;
+}
+
+
+
+/**/
